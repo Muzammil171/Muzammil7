@@ -1,0 +1,493 @@
+/* -------------------------1200px------------------------ */
+
+@media only screen and (max-width: 1200px) {
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .scroll-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+
+    .nav-ul li a {
+        padding: 7px 18px;
+        font-size: 16px;
+    }
+
+    .header-text h3 {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    .header-text h2 {
+        font-size: 30px;
+    }
+
+    .header-text h1 {
+        font-size: 75px;
+    }
+
+    .header-text .btn1,
+    .btn2 {
+        font-size: 15px;
+        padding: 14px 17px;
+        margin: 50px 30px 0px 0px;
+    }
+
+    .header-text .btn2 {
+        padding: 14px 30px;
+    }
+
+    .header-img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .header-img img {
+        width: 350px;
+    }
+
+    .about-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .work-a1,
+    .work-a2 {
+        font-size: 14px;
+        padding: 9px 28px;
+    }
+
+    .icon-png-section {
+        height: 600px;
+    }
+
+    .slider {
+        width: 316px;
+        height: 250px;
+    }
+
+    .card-div {
+        width: 171px;
+        height: 200px;
+    }
+
+    .Got-a-container {
+        padding: 100px 5px;
+    }
+
+    .got-img img {
+        margin: 80px 0px 0px 120px;
+        width: 400px;
+    }
+
+    .name {
+        width: 430px;
+    }
+
+    .input-class {
+        width: 205px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .input-message {
+        width: 430px;
+        font-size: 16px;
+        height: 250px;
+    }
+
+    .footer-ocn {
+        padding-block: 40px;
+    }
+
+}
+
+/* -------------------------992px------------------------ */
+
+@media only screen and (max-width: 992px) {
+
+    h2 {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .nav-ul {
+        gap: 5px;
+    }
+
+    .nav-ul li a {
+        padding: 5px 15px;
+        font-size: 16px;
+        font-weight: 350;
+    }
+
+    .header-text h3 {
+        font-size: 18px;
+    }
+
+    .header-text h2 {
+        font-size: 25px;
+    }
+
+    .header-text h1 {
+        font-size: 60px;
+    }
+
+    .header-text .btn1,
+    .btn2 {
+        font-weight: normal;
+        padding: 12px 15px;
+        margin: 30px 30px 0px 0px;
+    }
+
+    .header-text .btn2 {
+        padding: 12px 25px;
+    }
+
+    .header-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .header-img img {
+        width: 250px;
+    }
+
+    .about-me {
+        justify-content: space-around;
+        padding: 60px 0px 100px px;
+    }
+
+    .about-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-img img {
+        top: 35px;
+    }
+
+    .icon-png-section {
+        height: 500px;
+    }
+
+    .work-div {
+        padding: 0px;
+    }
+
+    .work-ul {
+        gap: 0px;
+        margin-top: 20px;
+    }
+
+    .work-a1,
+    .work-a2 {
+        font-weight: normal;
+        font-size: 14px;
+        padding: 6px 20px;
+        margin-left: 20px;
+    }
+
+    .web-sld {
+        margin-top: 20px;
+    }
+
+    .slider {
+        width: 266px;
+        height: 200px;
+    }
+
+    .card-div {
+        width: 121px;
+        height: 150px;
+    }
+
+    .Got-a-container {
+        padding: 70px 5px;
+    }
+
+    .got-img img {
+        margin: 60px 0px 0px 160px;
+        width: 300px;
+    }
+
+    .name {
+        width: 380px;
+    }
+
+    .input-class {
+        width: 180px;
+    }
+
+    .input-message {
+        width: 380px;
+    }
+
+    .send {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
+
+    .footer-home i {
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .footer-icon a {
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+/* -------------------------768px------------------------ */
+
+@media only screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .scroll-button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .nav-ul li a {
+        padding: 5px 10px;
+        font-size: 13px;
+        font-weight: 350;
+    }
+
+    .header-div {
+        padding: 70px 0px 70px 0px;
+    }
+
+    .header-text h3 {
+        font-size: 15px;
+    }
+
+    .header-text h2 {
+        font-size: 18px;
+        padding: 5px 0px;
+    }
+
+    .header-text h1 {
+        font-size: 45px;
+    }
+
+    .header-text .btn1,
+    .btn2 {
+        font-size: 12px;
+        padding: 5px 8px;
+        margin: 20px 10px 0px 0px;
+    }
+
+    .header-text .btn2 {
+        padding: 5px 12px;
+    }
+
+    .header-img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .header-img img {
+        width: 170px;
+    }
+
+    .about-me {
+        padding: 30px 5px 80px 5px;
+    }
+
+    .about-text {
+        width: 50%;
+    }
+
+    .about-text p {
+        line-height: normal;
+    }
+
+    .about-img {
+        width: 230px;
+        height: 230px;
+    }
+
+    .icon-png-section {
+        height: 380px;
+    }
+
+    .Got-a-container {
+        padding: 70px 5px;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .Got-a-div {
+        width: 100%;
+    }
+
+    .got-img img {
+        margin: 0px 0px 0px 160px;
+    }
+
+    .name {
+        width: 380px;
+    }
+
+}
+
+/* -------------------------600px------------------------ */
+
+@media only screen and (max-width: 600px) {
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .nav-div {
+        position: relative;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .hamburger {
+        position: absolute;
+        display: flex;
+        left: 20px;
+        font-size: 25px;
+        cursor: pointer;
+        color: #EEEEEE;
+        z-index: 500;
+    }
+
+    #navMenu {
+        display: none;
+        background-color: rgba(255, 255, 255, 0.123);
+        position: absolute;
+        top: 62px;
+        left: 0;
+        padding: 0px 10px;
+        text-align: center;
+        z-index: 200;
+    }
+
+    .nav-ul li {
+        margin: 20px;
+    }
+
+    #navMenu.open {
+        display: block;
+    }
+
+    .header-div {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    .header-img {
+        margin-top: 20px;
+    }
+
+    .about-me {
+        padding: 50px 5px 50px 5px;
+    }
+
+    .about-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .work-a1,
+    .work-a2 {
+        font-size: 12px;
+        padding: 6px 15px;
+        margin-left: 15px;
+    }
+
+    .web-sld {
+        margin-top: 15px;
+    }
+
+    .Got-a-container {
+        padding: 70px 5px;
+    }
+
+    .got-img img {
+        margin: 0px 0px 0px 100px;
+    }
+
+    .name {
+        width: 365px;
+    }
+
+    .input-class {
+        width: 170px;
+    }
+
+    .input-message {
+        width: 365px;
+    }
+
+    .footer-ocn {
+        flex-direction: column;
+        padding-block: 20px;
+    }
+
+    .footer-home i {
+        display: inline;
+        gap: 0px;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .footer-icon a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+}
