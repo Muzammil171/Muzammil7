@@ -254,6 +254,10 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+    .nav-div {
+        justify-content: space-between;
+        padding-inline: 10px;
+    }
 
     h2 {
         font-size: 25px;
