@@ -28,7 +28,7 @@ body {
     background-color: #081910;
     color: #EEEEEE;
     opacity: 0.7;
-    transition: ease-in 0.2s;
+    transition: ease-in 0.1s;
 }
 
 .scroll-button:hover {
