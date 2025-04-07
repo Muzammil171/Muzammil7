@@ -391,6 +391,7 @@ nav {
 
 .Got-a-div {
     width: 50%;
+    /* background-color: rgb(51, 70, 70); */
 }
 
 .got-img img {
@@ -402,6 +403,8 @@ nav {
 
 .name {
     width: 600px;
+    /* background-color: rgb(51, 70, 70); */
+
 }
 
 .name-div {
