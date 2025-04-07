@@ -7,7 +7,7 @@
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .container {
@@ -21,25 +21,25 @@
     }
 
     .logo {
-        width: 250px;
+        width: 220px;
     }
 
     .nav-ul li a {
         padding: 7px 18px;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .header-text h3 {
-        font-size: 20px;
+        font-size: 18px;
         letter-spacing: 1.5px;
     }
 
     .header-text h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .header-text h1 {
-        font-size: 75px;
+        font-size: 50px;
     }
 
     .header-text .btn1,
