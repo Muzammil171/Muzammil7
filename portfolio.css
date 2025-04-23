@@ -14,8 +14,8 @@ body {
 /* --------alternate-class------------- */
 
 .scroll-button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     right: 15px;
     bottom: 10px;
@@ -54,13 +54,14 @@ span {
 }
 
 h2 {
-    font-size: 60px;
+    letter-spacing: 1.5px;
+    font-size: 40px;
     color: #EEEEEE;
     text-shadow: -3px -2px 6px rgba(238, 238, 238, 0.74);
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     color: #EEEEEE;
 }
 
@@ -87,7 +88,7 @@ nav {
 }
 
 .logo {
-    width: 300px;
+    width: 250px;
     margin-block: 20px;
     filter: drop-shadow(-2px 0px 3px #EEEEEE);
 }
@@ -103,7 +104,7 @@ nav {
 
 .nav-ul li a {
     padding: 8px 20px;
-    font-size: 18px;
+    font-size: 14px;
     transition: 0.2s;
     border-radius: 5px;
     border: 2px solid transparent;
@@ -142,27 +143,27 @@ nav {
 
 .header-text h3 {
     padding: 10px 0px;
-    font-size: 25px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #EEEEEE;
     text-shadow: -3px -2px 6px rgb(80, 76, 76);
 }
 
 .header-text h2 {
-    font-size: 40px;
+    font-size: 30px;
     padding: 0px;
     text-shadow: -3px -2px 6px rgb(80, 76, 76);
 }
 
 .header-text h1 {
-    font-size: 100px;
+    font-size: 80px;
     color: #EEEEEE;
     text-shadow: -3px -2px 6px rgba(238, 238, 238, 0.74);
 }
 
 .header-text .btn1,
 .btn2 {
-    font-size: 16px;
+    font-size: 14px;
     padding: 15px 18px;
     border-radius: 50px;
     font-weight: 600;
@@ -177,7 +178,7 @@ nav {
 }
 
 .header-text .btn2 {
-    padding: 15px 32px;
+    padding: 15px 30px;
     opacity: 0.8;
     border: 2px solid #081910;
 }
@@ -194,8 +195,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 550px;
-    height: 550px;
+    width: 450px;
+    height: 450px;
     position: relative;
     filter: contrast(110%);
     transform-style: preserve-3d;
@@ -231,7 +232,7 @@ nav {
 
 .header-img img {
     position: absolute;
-    width: 450px;
+    width: 350px;
     animation: hu__hu__ infinite 3s ease-in-out;
     filter: drop-shadow(0px 5px 5px #EEEEEE);
 }
@@ -260,8 +261,8 @@ nav {
 
 .about-img {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -395,13 +396,13 @@ nav {
 
 .got-img img {
     margin: 100px 0px 0px 130px;
-    width: 500px;
+    width: 300px;
     filter: invert(100%);
     animation: got-a infinite 3s ease-in-out;
 }
 
 .name {
-    width: 600px;
+    width: 520px;
 }
 
 .name-div {
@@ -418,7 +419,7 @@ nav {
 }
 
 .input-class {
-    width: 290px;
+    width: 250px;
     height: 60px;
     padding: 10px;
     margin-top: 10px;
@@ -429,7 +430,7 @@ nav {
 }
 
 .input-message {
-    width: 600px;
+    width: 520px;
     font-size: 20px;
     height: 300px;
     margin-top: 10px;
