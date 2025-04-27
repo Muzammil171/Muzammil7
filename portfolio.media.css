@@ -11,7 +11,7 @@
     }
 
     .container {
-        width: 85%;
+        width: 100%;
     }
 
     .scroll-button {
@@ -62,6 +62,10 @@
         width: 250px;
     }
 
+    .about-me {
+        justify-content: space-around;
+    }
+
     .about-img {
         width: 250px;
         height: 250px;
@@ -75,16 +79,6 @@
 
     .icon-png-section {
         height: 600px;
-    }
-
-    .slider {
-        width: 316px;
-        height: 250px;
-    }
-
-    .card-div {
-        width: 171px;
-        height: 200px;
     }
 
     .Got-a-container {
@@ -110,6 +104,38 @@
         width: 300px;
         font-size: 16px;
         height: 180px;
+    }
+
+    .ifram-div {
+        width: 700px;
+        height: 350px;
+        margin-bottom: -150px;
+
+    }
+
+    .right-side h2 {
+        margin: 10px 0 30px;
+        font-size: 28px;
+    }
+
+    .info-item {
+        margin-bottom: 20px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .info-text strong {
+        font-size: 16px;
+    }
+
+    .info-text p {
+        font-size: 12px;
+    }
+
+    .client-text {
+        padding-left: 80px;
     }
 
     .footer-ocn {
@@ -145,40 +171,40 @@
 
     .nav-ul li a {
         padding: 5px 15px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 350;
     }
 
     .header-text h3 {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .header-text h2 {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .header-text h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .header-text .btn1,
     .btn2 {
         font-weight: normal;
-        padding: 12px 15px;
+        padding: 10px 13px;
         margin: 30px 30px 0px 0px;
     }
 
     .header-text .btn2 {
-        padding: 12px 25px;
+        padding: 10px 15px;
     }
 
     .header-img {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
 
     .header-img img {
-        width: 250px;
+        width: 200px;
     }
 
     .about-me {
@@ -187,20 +213,53 @@
     }
 
     .about-img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
     .about-img img {
         top: 35px;
     }
 
+    .progress-circle {
+        width: 110px;
+        height: 110px;
+    }
+
+    .progress-circle::before {
+        width: 95px;
+        height: 95px;
+    }
+
+    .progress-value {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .label {
+        margin-top: 8px;
+        font-size: 14px;
+    }
+
+
+    .skill-clidd2 h2 {
+        padding: 0px 0px 20px 10px;
+    }
+
+    .skill-p2 {
+        display: none;
+    }
+
     .icon-png-section {
-        height: 500px;
+        height: 650px;
     }
 
     .work-div {
         padding: 0px;
+    }
+
+    .work-text {
+        margin-left: 20px;
     }
 
     .work-ul {
@@ -214,20 +273,6 @@
         font-size: 14px;
         padding: 6px 20px;
         margin-left: 20px;
-    }
-
-    .web-sld {
-        margin-top: 20px;
-    }
-
-    .slider {
-        width: 266px;
-        height: 200px;
-    }
-
-    .card-div {
-        width: 121px;
-        height: 150px;
     }
 
     .Got-a-container {
@@ -255,6 +300,40 @@
         font-size: 14px;
         padding: 8px 15px;
         margin-top: 15px;
+    }
+
+
+    .client-text {
+        padding-left: 0px;
+    }
+
+
+    .second-slider-content {
+        width: 200px;
+    }
+
+    .review-card {
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+    }
+
+    .profile-img {
+        margin-bottom: 10px;
+    }
+
+    .review-header {
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+
+    .review-text {
+        margin: 0;
+    }
+
+    .side-icon {
+        display: none;
     }
 
     .footer-home i {
@@ -347,12 +426,37 @@
     }
 
     .about-img {
-        width: 230px;
-        height: 230px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .skill {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px 0px;
+        padding: 40px 0px;
+    }
+
+    .skill-clidd2 {
+        width: 100%;
+        padding: 0px 30px;
+    }
+
+    .skill-clidd2 h2 {
+        text-align: center;
     }
 
     .icon-png-section {
-        height: 380px;
+        height: 500px;
+    }
+
+    .prev-btn,
+    .next-btn {
+
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
     }
 
     .Got-a-container {
@@ -371,6 +475,25 @@
 
     .name {
         width: 380px;
+    }
+
+    .ifram-div {
+        width: 90%;
+        height: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        margin-bottom: -200px;
+    }
+
+    .left-side {
+        width: 100%;
+        height: 250px;
+    }
+
+    .right-side {
+        width: 100%;
+        height: auto;
+        padding: 40px;
     }
 
 }
@@ -401,11 +524,12 @@
 
     #navMenu {
         display: none;
-        background-color: rgba(255, 255, 255, 0.123);
+        background: rgba(0, 20, 30, 0.95);
         position: absolute;
         top: 62px;
         left: 0;
-        padding: 0px 10px;
+        width: 100%;
+        /* padding: 0px 100px; */
         text-align: center;
         z-index: 200;
     }
@@ -447,8 +571,36 @@
         margin-left: 15px;
     }
 
-    .web-sld {
-        margin-top: 15px;
+    .slider {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .icon-png-section {
+        height: 650px;
+    }
+
+    .designer-card {
+        width: 300px;
+    }
+
+    .card-div {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .card-img img {
+        border-radius: 5px;
+    }
+
+    .card-div p {
+        display: none;
+    }
+
+    .card-div h1 {
+        padding: 20px;
     }
 
     .Got-a-container {
@@ -456,6 +608,7 @@
     }
 
     .got-img img {
+        width: 250px;
         margin: 0px 0px 0px 70px;
     }
 
@@ -480,6 +633,63 @@
 
     }
 
+    .right-side h6 {
+        font-size: 10px;
+    }
+
+    .right-side h2 {
+        font-size: 18px;
+        margin: 10px 0 20px;
+
+    }
+
+    .info-item {
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        font-size: 14px;
+    }
+
+    .info-text strong {
+        font-size: 12px;
+    }
+
+    .info-text p {
+        font-size: 10px;
+    }
+
+    hr {
+        width: 95%;
+        margin: 5px 0 10px;
+    }
+
+    .right-side {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .second-slider-content {
+        gap: 0;
+        width: 100%;
+    }
+
+    .review-card {
+        width: 300px;
+        flex-direction: row;
+    }
+
+    .review-header {
+        flex-direction: row;
+        margin-bottom: 15px;
+        text-align: start;
+    }
+
+    .profile-img {
+        margin: 0px 10px 0px 0px;
+    }
+
     .footer-ocn {
         flex-direction: column;
         padding-block: 20px;
@@ -497,6 +707,15 @@
         height: 30px;
         font-size: 16px;
         margin-top: 20px;
+    }
+
+    .copyright {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .name {
+        padding: 0;
     }
 
 }

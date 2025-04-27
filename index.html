@@ -20,6 +20,23 @@
 
 <body>
 
+    <!-- -----------------new section------------------- -->
+
+    <div class="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- -----------------new section------------------- -->
+
     <div class="">
         <button id="scrollButton" class="scroll-button"><i class="fa-solid fa-arrow-up"></i></button>
     </div>
@@ -87,9 +104,62 @@
 
     </div>
 
+
     <!-- -----------------new section------------------- -->
 
-    <section class="icon-png-section" id="Projects">
+
+    <div class="skill container">
+
+        <div class="skill-clidd1">
+
+            <div class="circle-wrapper">
+                <div>
+                    <div class="progress-circle" data-value="95" data-skill="HTML">
+                        <div class="progress-value">HTML</div>
+                    </div>
+                    <div class="label">Skill</div>
+                </div>
+
+                <div>
+                    <div class="progress-circle" data-value="90" data-skill="CSS">
+                        <div class="progress-value">CSS</div>
+                    </div>
+                    <div class="label">Skill</div>
+                </div>
+
+                <div>
+                    <div class="progress-circle" data-value="80" data-skill="JAVA SCRIPT">
+                        <div class="progress-value">JAVA SCRIPT</div>
+                    </div>
+                    <div class="label">Skill</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="skill-clidd2">
+
+            <h2>My <span>Skills</span></h2>
+
+            <p>
+                Here you can see the skills I’m confident in and use regularly.
+                Each circle shows how well I understand a particular skill, with the skill name displayed right in the
+                center. <br>
+
+                HTML – I'm experienced in creating structured and semantic markup.<br>
+                CSS – I know how to design stylish and fully responsive layouts.<br>
+                JavaScript – I can make websites interactive and dynamic.<br>
+
+            <p class="skill-p2">The simple animation isn’t just for looks — it reflects my actual skill levels.</p>
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- -----------------new section------------------- -->
+
+    <section class=" icon-png-section" id="Projects">
 
         <img class="icon-img" src="photo/icon-2.png" alt="">
 
@@ -98,39 +168,81 @@
             <div class="work-text">
                 <h2>My recent <span>works</span></h2>
                 <ul class="work-ul">
-                    <li><a href="project-all.html" class="work-a1">All</a></li>
+                    <li><a href="#" class="work-a1" onclick="openOverlay()">All</a></li>
                     <li><a href="#" class="work-a2">Web Design</a></li>
                 </ul>
             </div>
 
             <div class="web-sld">
-
                 <div class="slider-container">
-
                     <div class="slider">
 
                         <div class="card">
-                            <div class="card-div">
-                                <img src="photo/coffee.png" alt="">
+                            <div class="designer-card">
+                                <div class="card-div  ">
+                                    <div class="">
+                                        <p class="p44">Web design,</p>
+                                        <h1 class="hero-title">View Project <br><span class="highlight">Coffee
+                                                Shope</span>
+                                        </h1>
+                                        <p style="padding: 15px 0px;">Thank you for joining me on this project!</p>
+                                        <a href="https://topcoffee.netlify.app/">
+                                            <button class="btn-blue">Cleck here →</button>
+                                        </a>
+                                    </div>
+                                    <div class="card-img">
+                                        <img src="photo/coffee.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card">
-                            <div class="card-div">
-                                <img src="photo/portfolio.png" alt="">
+                            <div class="designer-card">
+                                <div class="card-div">
+                                    <div class="">
+                                        <p>Web design,</p>
+                                        <h1 class="hero-title">View Project <br><span class="highlight">Encirkel</span>
+                                        </h1>
+                                        <p style="padding: 15px 0px;">Thank you for joining me on this project!</p>
+                                        <a href="https://encirkel0.netlify.app/">
+                                            <button class="btn-blue">Cleck here →</button>
+                                        </a>
+                                    </div>
+                                    <div class="card-img">
+                                        <img src="photo/Encirkel.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <div class="card">
-                            <div class="card-div">
-                                <img src="photo/Encirkel.png" alt="">
+                            <div class="designer-card">
+                                <div class="card-div  ">
+                                    <div class="">
+                                        <p>Web design,</p>
+                                        <h1 class="hero-title">View Project <br><span class="highlight">My
+                                                portfolio</span>
+                                        </h1>
+                                        <p style="padding: 15px 0px;">Thank you for joining me on this project!</p>
+                                        <a href="index.html">
+                                            <button class="btn-blue">Cleck here →</button>
+                                        </a>
+                                    </div>
+                                    <div class="card-img">
+                                        <img src="photo/portfolio.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
 
                     </div>
 
+                    <button class="prev-btn  btn-hov">&#10094;</button>
+                    <button class="next-btn btn-hov">&#10095;</button>
                 </div>
+
+
             </div>
 
         </div>
@@ -173,6 +285,180 @@
 
     <!-- -----------------new section------------------- -->
 
+    <div class="i-fram-div-ssection  ">
+
+        <div class="ifram-div">
+
+            <div class="left-side">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.3840746444087!2d67.0750813741299!3d24.849190745943144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e91fd0edb6f%3A0xf03d32e3c2ac1699!2sYaseen%20Square%2C%20Karachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1682345678910!5m2!1sen!2s"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="right-side">
+
+                <h6>Available 24/7</h6>
+                <h2>Let's Connect</h2>
+
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="info-text">
+                        <strong>Location</strong>
+                        <p>Muslim abad Malir, city Karchi</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div class="info-text">
+                        <strong>Phone Number</strong>
+                        <p>+92 316 2310459</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="info-text">
+                        <strong>Email Address</strong>
+                        <p>muhammedmuzammilqureshi@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="i-fram-div-ssection-boder"></div>
+    <!-- -----------------new section------------------- -->
+
+    <div class="client container">
+
+        <div class="client-text">
+            <h2>Client <span>review!</span></h2>
+        </div>
+
+        <div class="slider-section">
+            <div class="slider-wrapper">
+                <div class="second-slider-content">
+
+                    <div class="second-slider-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="photo/hrt1.jpg" alt="Client Photo" class="profile-img">
+                                <div>
+                                    <h3 class="client-name">Omar</h3>
+                                    <p class="client-role">Premium Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★☆</div>
+                            <p class="review-text">
+                                "Great service and timely delivery! The product exceeded expectations. Highly
+                                satisfied."
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second-slider-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="photo/hrt2.jpeg" alt="Client Photo" class="profile-img">
+                                <div>
+                                    <h3 class="client-name">Hassan</h3>
+                                    <p class="client-role">Gold Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">
+                                "The service was amazing. Fast delivery and high-quality products. Highly recommend!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second-slider-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="photo/hrt3.jpeg" alt="Client Photo" class="profile-img">
+                                <div>
+                                    <h3 class="client-name">Ahmed</h3>
+                                    <p class="client-role">Gold Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">
+                                "Excellent service! Quick delivery and the product quality is outstanding. Definitely
+                                recommend!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second-slider-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="photo/hrt4.jpg" alt="Client Photo" class="profile-img">
+                                <div>
+                                    <h3 class="client-name">Tariq</h3>
+                                    <p class="client-role">Premium Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★☆</div>
+                            <p class="review-text">
+                                "Amazing service! The quality was top-notch and delivery was on time. Highly
+                                recommend!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="second-slider-item">
+                        <div class="review-card">
+                            <div class="review-header">
+                                <img src="photo/hrt5.jpg" alt="Client Photo" class="profile-img">
+                                <div>
+                                    <h3 class="client-name">Bilal</h3>
+                                    <p class="client-role">Gold Member</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p class="review-text">
+                                "Clean design, quick assistance. Highly recommend"
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="slider-buttons">
+                <button class="second-prev-button button-hover">&#10094;</button>
+                <button class="second-next-button button-hover">&#10095;</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- -----------------new section------------------- -->
+
+    <div class="side-icon">
+        <div class="sidebar">
+            <div class="sidebar-icon" data-label="+92 316 2310459">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="sidebar-icon" data-label="+92 316 2310459">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="sidebar-icon" data-label="muhammedmuzammilqureshi@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="sidebar-icon" data-label="Muslim abad Malir, city Karchi">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------new section------------------- -->
+
     <footer>
         <div class="footer-ocn container">
 
@@ -194,7 +480,110 @@
             </div>
 
         </div>
+
+        <div class="copyr">
+            <p class="copyright">
+                Copyright 2025 © <span class="name">Muhammad Muzammil</span>
+            </p>
+        </div>
+
     </footer>
+
+    <!-- -----------------new section------------------- -->
+
+    <div id="overlayContainer" class="overlay-container">
+
+        <div class="overlay-header">
+            <button class="close-btn" onclick="closeOverlay()">×</button>
+        </div>
+
+        <div class="all-pj">
+
+            <div class="designer-card" style="backdrop-filter: none; box-shadow: none;">
+                <div class="card-div ">
+                    <div class="">
+                        <p>Web design,</p>
+                        <h1 class="hero-title">View Project <br><span class="highlight">Encirkel</span>
+                        </h1>
+                        <p style="padding: 15px 0px;">Thank you for joining me on this project!</p>
+                        <button class="btn-blue">Cleck here →</button>
+                    </div>
+                    <div class="card-img">
+                        <img src="photo/Encirkel.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="designer-card" style="backdrop-filter: none; box-shadow: none;">
+                <div class="card-div ">
+                    <div class="">
+                        <p>Web design,</p>
+                        <h1 class="hero-title">View Project <br><span class="highlight">Coffee Shope</span>
+                        </h1>
+                        <p style="padding: 15px 0px;">Thank you for joining me on this project!</p>
+                        <button class="btn-blue">Cleck here →</button>
+                    </div>
+                    <div class="card-img">
+                        <img src="photo/coffee.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="designer-card" style="backdrop-filter: none; box-shadow: none;">
+                <div class="card-div ">
+                    <div class="">
+                        <p>Web design,</p>
+                        <h1 class="hero-title">View Project <br><span class="highlight"> My Portfolio</span>
+                        </h1>
+                        <p style="padding: 15px 0px;">Thank you for joining me on this project!</p>
+                        <button class="btn-blue">Cleck here →</button>
+                    </div>
+                    <div class="card-img">
+                        <img src="photo/portfolio.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- -----------------new section------------------- -->
+
+
+
+
+
+
+    <script>
+
+        var secondSliderIndex = 0;
+        var secondSliderItems = document.querySelectorAll('.second-slider-content .second-slider-item');
+        var totalSecondItems = secondSliderItems.length;
+
+        var secondNextBtn = document.querySelector('.second-next-button');
+        var secondPrevBtn = document.querySelector('.second-prev-button');
+        var secondSliderContent = document.querySelector('.second-slider-content');
+
+        function updateSecondSlider() {
+            var offset = -secondSliderIndex * 100;
+            secondSliderContent.style.transform = `translateX(${offset}%)`;
+        }
+
+        secondNextBtn.addEventListener('click', function () {
+            secondSliderIndex = (secondSliderIndex + 1) % totalSecondItems;
+            updateSecondSlider();
+        });
+
+        secondPrevBtn.addEventListener('click', function () {
+            secondSliderIndex = (secondSliderIndex - 1 + totalSecondItems) % totalSecondItems;
+            updateSecondSlider();
+        });
+
+        updateSecondSlider();
+
+
+    </script>
 
     <script src="portfolio.js"></script>
 

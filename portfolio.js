@@ -40,26 +40,102 @@ document.getElementById('hamburgerMenu').addEventListener('click', function () {
 
 // ---------------------new section----------------------
 
-let index = 0;
-const cards = document.querySelectorAll('.card');
-const totalCards = cards.length;
+const circles = document.querySelectorAll('.progress-circle');
 
-function moveToNextCard() {
-    index++;
-    if (index >= totalCards) {
-        index = 0;  // Go back to the first card
-    }
-    updateSlider();
-}
+circles.forEach(circle => {
+    const value = parseInt(circle.getAttribute('data-value'), 10);
+    const skillName = circle.getAttribute('data-skill');
+    const valueElem = circle.querySelector('.progress-value');
+    let start = 0;
 
-function updateSlider() {
-    const slider = document.querySelector('.slider');
-    const offset = -index * 100; // Move by 100% of the current card's width
-    slider.style.transform = `translateX(${offset}%)`;
-}
+    const updateProgress = () => {
+        start++;
+        valueElem.textContent = skillName; // Show skill name in center
+        const degree = start * 3.6;
+        circle.style.background = `conic-gradient(#189b9b ${degree}deg, #081910 0deg)`;
 
-// Automatically move to the next card every 2 seconds
-setInterval(moveToNextCard, 2000);
+        if (start < value) {
+            requestAnimationFrame(updateProgress);
+        }
+    };
+
+    updateProgress();
+});
 
 // ---------------------new section----------------------
+
+
+
+
+function openOverlay() {
+    document.getElementById("overlayContainer").style.display = "flex";
+}
+
+function closeOverlay() {
+    document.getElementById("overlayContainer").style.display = "none";
+}
+
+
+let currentIndex = 0;
+const cards = document.querySelectorAll('.slider .card');
+const totalCards = cards.length;
+
+const nextBtn = document.querySelector('.next-btn');
+const prevBtn = document.querySelector('.prev-btn');
+const dots = document.querySelectorAll('.dot');
+const slider = document.querySelector('.slider');
+const sliderContainer = document.querySelector('.slider-container');
+
+function updateSlider() {
+    const offset = -currentIndex * 100;
+    slider.style.transform = `translateX(${offset}%)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+}
+
+// Button navigation
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalCards;
+    updateSlider();
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+    updateSlider();
+});
+
+// Dot navigation
+dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+        currentIndex = parseInt(dot.getAttribute('data-index'));
+        updateSlider();
+    });
+});
+
+// Auto-slide with pause on hover
+let autoSlideInterval;
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        currentIndex = (currentIndex + 1) % totalCards;
+        updateSlider();
+    }, 2000);
+}
+
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
+
+// Mouse hover pause/resume
+sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+sliderContainer.addEventListener('mouseleave', startAutoSlide);
+
+// Init
+updateSlider();
+startAutoSlide();
+
+// ---------------------new section----------------------
+
+
 
