@@ -6,11 +6,20 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
     background-color: #032d39;
     overflow-x: hidden;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
+.nunito-uniquifier {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
 
 /* --------alternate-class------------- */
 
@@ -132,15 +141,44 @@ body {
     box-shadow: 0px 0px 10px #081910;
 }
 
+/* Animation styles */
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.fade-in-left {
+    transform: translateX(-100px);
+}
+
+.fade-in-right {
+    transform: translateX(100px);
+}
+
+.fade-in-down {
+    transform: translateY(-100px);
+}
+
+.fade-in-up {
+    transform: translateY(100px);
+}
+
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 /* --------alternate-class------------- */
 
 .scroll-button {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     position: fixed;
     right: 15px;
     bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 50%;
     display: none;
     border: none;
@@ -154,6 +192,7 @@ body {
 
 .scroll-button:hover {
     opacity: 1;
+    text-shadow: 0px 3px 3px rgba(238, 238, 238, 0.6);
 }
 
 .color {
@@ -180,6 +219,12 @@ h2 {
     color: #EEEEEE;
     padding-left: 10px;
     text-shadow: -3px -2px 6px rgba(238, 238, 238, 0.74);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 p {
@@ -225,15 +270,36 @@ nav {
 }
 
 .nav-ul li a {
-    padding: 8px 20px;
-    font-size: 14px;
-    transition: 0.2s;
-    border-radius: 5px;
-    border: 2px solid transparent;
+    position: relative;
+    font-size: 16px;
     color: #EEEEEE;
+    padding: 6px 18px;
+    transition: 0.5s;
+    border-radius: 15px;
+    border: 2px solid transparent;
 }
 
-.nav-ul li a:hover,
+.nav-ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: solid 2px #189b9b;
+    border-radius: 15px;
+    transform: scale(0) translateY(5px);
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.nav-ul li a:hover::before,
+.nav-ul li a.active::before {
+    transform: scale(1) translate(0);
+    opacity: 1;
+}
+
 .work-ul li a:hover,
 .send:hover {
     opacity: 1;
@@ -261,6 +327,7 @@ nav {
     animation-name: slideInLeft;
     animation-duration: 1s;
     animation-fill-mode: both;
+    /* background-color: aqua; */
 }
 
 .header-text h3 {
@@ -275,16 +342,32 @@ nav {
     font-size: 30px;
     padding: 0px;
     text-shadow: -3px -2px 6px rgb(80, 76, 76);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .header-text h1 {
     font-size: 80px;
     color: #EEEEEE;
     text-shadow: -3px -2px 6px rgba(238, 238, 238, 0.74);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 .header-text .btn1,
 .btn2 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     font-size: 14px;
     padding: 15px 18px;
     border-radius: 50px;
@@ -302,7 +385,7 @@ nav {
 .header-text .btn2 {
     padding: 15px 30px;
     opacity: 0.8;
-    border: 2px solid #081910;
+    /* border: 2px solid #081910; */
 }
 
 .header-text button:hover {
@@ -409,20 +492,20 @@ nav {
 
 .skill {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 0px;
+    padding: 40px 30px;
     /* background-color: rgba(255, 228, 196, 0.473); */
 }
 
 
-.skill-clidd1 {
-    /* background-color: #f39c12; */
-}
+/* .skill-clidd1 {
+    background-color: #f39c12;
+} */
 
 .circle-wrapper {
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 .progress-circle {
@@ -761,45 +844,70 @@ nav {
     animation: got-a infinite 3s ease-in-out;
 }
 
-.name {
-    width: 420px;
-}
-
-.name-div {
-    display: flex;
-    margin-bottom: 30px;
-    gap: 20px;
-}
-
-.name label {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
+.form-container {
+    width: 100%;
+    max-width: 450px;
     color: #EEEEEE;
+    /* background-color: aquamarine; */
 }
 
-.input-class {
-    width: 200px;
-    height: 60px;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.123);
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #EEEEEE;
+    font-weight: bold;
 }
 
-.input-message {
-    width: 420px;
-    font-size: 20px;
-    height: 300px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.123);
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #189b9b;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #EEEEEE;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
 }
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #eeeeee9f;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #189b9b;
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 5px #189b9b;
+}
+
+.form-container input,
+.form-container textarea {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.form-container textarea {
+    resize: vertical;
+    min-height: 160px;
+}
+
 
 .send {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 50px;
@@ -876,7 +984,13 @@ nav {
 
 .icon {
     color: #189b9b;
-    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 1px #189b9b;
     margin-right: 15px;
     margin-top: 5px;
     flex-shrink: 0;
@@ -922,7 +1036,6 @@ hr {
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding-block: 3px;
     border-left: solid 1px #081910;
     border-right: solid 1px #081910;
     background-color: #032d39;
@@ -934,6 +1047,7 @@ hr {
     gap: 20px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     transition: 1s ease-in-out;
 }
 
@@ -1036,13 +1150,17 @@ hr {
 }
 
 .sidebar-icon {
-    padding: 12px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 5px 0 0 5px;
     margin: 5px 0;
     position: relative;
     cursor: pointer;
-    text-align: center;
-    font-size: 12px;
+    font-size: 20px;
+    text-shadow: 0px 3px 3px rgba(238, 238, 238, 0.6);
     transition: background-color 0.3s ease;
     background-color: #189b9b;
     color: #EEEEEE;
@@ -1142,8 +1260,6 @@ footer {
     border: 2px solid #081910;
     color: #EEEEEE;
 }
-
-
 
 .copyright {
     text-align: center;

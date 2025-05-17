@@ -71,6 +71,10 @@
         height: 250px;
     }
 
+    .circle-wrapper {
+        gap: 20px;
+    }
+
     .work-a1,
     .work-a2 {
         font-size: 14px;
@@ -82,7 +86,7 @@
     }
 
     .Got-a-container {
-        padding: 100px 0px;
+        padding: 100px 5px;
     }
 
     .got-img img {
@@ -90,20 +94,8 @@
         width: 300px;
     }
 
-    .name {
-        width: 300px;
-    }
-
-    .input-class {
-        width: 140px;
-        height: 50px;
-        font-size: 16px;
-    }
-
-    .input-message {
-        width: 300px;
-        font-size: 16px;
-        height: 180px;
+    .form-container {
+        max-width: 400px;
     }
 
     .ifram-div {
@@ -120,10 +112,6 @@
 
     .info-item {
         margin-bottom: 20px;
-    }
-
-    .icon {
-        font-size: 20px;
     }
 
     .info-text strong {
@@ -284,18 +272,6 @@
         width: 300px;
     }
 
-    .name {
-        width: 380px;
-    }
-
-    .input-class {
-        width: 180px;
-    }
-
-    .input-message {
-        width: 380px;
-    }
-
     .send {
         font-size: 14px;
         padding: 8px 15px;
@@ -440,11 +416,8 @@
 
     .skill-clidd2 {
         width: 100%;
-        padding: 0px 30px;
-    }
-
-    .skill-clidd2 h2 {
-        text-align: center;
+        padding: 0px 20px;
+        /* background-color: aqua; */
     }
 
     .icon-png-section {
@@ -473,8 +446,8 @@
         margin: 0px 0px 0px 160px;
     }
 
-    .name {
-        width: 380px;
+    .form-container label {
+        font-size: 11px;
     }
 
     .ifram-div {
@@ -548,7 +521,8 @@
     }
 
     .header-text {
-        text-align: center;
+        width: 100%;
+        padding: 0px 20px;
     }
 
     .header-img {
@@ -556,13 +530,13 @@
     }
 
     .about-me {
-        padding: 50px 5px 50px 5px;
+        padding: 50px 20px;
     }
 
     .about-text {
-        text-align: center;
         width: 100%;
     }
+
 
     .work-a1,
     .work-a2 {
@@ -610,27 +584,6 @@
     .got-img img {
         width: 250px;
         margin: 0px 0px 0px 70px;
-    }
-
-    .name {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .name-div {
-        flex-direction: column;
-        margin-bottom: 30px;
-        gap: 20px;
-    }
-
-    .input-class {
-        width: 100%;
-    }
-
-    .input-message {
-        width: 100%;
-        height: 150px;
-
     }
 
     .right-side h6 {
