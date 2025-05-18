@@ -2,9 +2,9 @@
 window.onscroll = function () {
     var button = document.getElementById("scrollButton");
     if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
-        button.style.display = "block"; // Show button when half page is scrolled
+        button.style.display = "block"; 
     } else {
-        button.style.display = "none"; // Hide button when less than half is scrolled
+        button.style.display = "none"; 
     }
 };
 
