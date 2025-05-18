@@ -8,7 +8,7 @@ window.onscroll = function () {
     }
 };
 
-// Add click event to scroll to top
+
 document.getElementById("scrollButton").addEventListener("click", function () {
     window.scrollTo({
         top: 0,
