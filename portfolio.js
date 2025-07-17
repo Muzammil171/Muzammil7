@@ -2,9 +2,9 @@
 window.onscroll = function () {
     var button = document.getElementById("scrollButton");
     if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
-        button.style.display = "block"; 
+        button.style.display = "block";
     } else {
-        button.style.display = "none"; 
+        button.style.display = "none";
     }
 };
 
